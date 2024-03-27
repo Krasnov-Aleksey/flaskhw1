@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+{% for item in news %}
+<h1>{{item.news_headline}}</h1>
+<h2>{{item.news_description}}</h2>
+<p>Дата публикации {{item.publication_date}}</p>
+{% endfor %}
+</body>
+</html>
